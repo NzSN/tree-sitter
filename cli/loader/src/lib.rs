@@ -1391,7 +1391,7 @@ impl Loader {
 
     #[must_use]
     pub fn get_scanner_path(&self, src_path: &Path) -> Option<PathBuf> {
-        let path = src_path.join("scanner.c");
+        let path = src_path.join("scanner.cc");
         path.exists().then_some(path)
     }
 }
